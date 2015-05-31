@@ -52,9 +52,20 @@ class RecipesController extends Controller {
 					->subject('New recipe!'); // set subject
 		});
 
+		flash('Your recipe has been added!');
 
 		return redirect('recipes'); // redirect to 'recipes' which calls the index method above
 
+		
+	}
+
+	public function update($id, Request $request)
+	{
+		
+		$isMade = $request->has('recipe_made'); // when the checkbox is clicked, the request will contain a recipe_made entry. Check for this and set true or false.
+
+		Recipe::findOrFail($id)
+			->update(['recipe_made' => $isMade]); // grab the recipe with the relevant id and update the 'recipe_made' field as per the check above ^
 		
 	}
 

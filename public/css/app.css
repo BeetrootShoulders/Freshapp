@@ -10,4 +10,8 @@
     height: 3px;
     background: #F6624A; }
 
+.flash {
+  display: none;
+  color: red; }
+
 /*# sourceMappingURL=app.css.map */

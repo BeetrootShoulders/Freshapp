@@ -18,7 +18,6 @@ class Recipe extends Model {
 		return $this->belongsTo('App\User');
 	}
 
-<<<<<<< HEAD
 	public function category()
 	{
 		
@@ -26,8 +25,6 @@ class Recipe extends Model {
 	
 	}
 
-=======
->>>>>>> origin/master
 	public function getOwnerEmail()
 	{
 		return $this->user->email;

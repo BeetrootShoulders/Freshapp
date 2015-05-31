@@ -15,11 +15,7 @@ return [
 	|
 	*/
 
-<<<<<<< HEAD
 	'driver' => env('MAIL_DRIVER', 'mandrill'),
-=======
-	'driver' => env('MAIL_DRIVER', 'log'),
->>>>>>> origin/master
 
 	/*
 	|--------------------------------------------------------------------------
